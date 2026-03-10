@@ -1,16 +1,67 @@
-# React + Vite
+# Students Table – React CRUD Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This project is a **Students Table application built using React.js** as part of the technical assignment for SR Integrated Circuit Pvt. Ltd.
+It is a **frontend-only implementation** where all CRUD operations are handled using **local JSON data and React state** without any backend.
 
-Currently, two official plugins are available:
+The application allows users to **add, edit, delete, and view students** in a table format with validation and Excel export functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Link:** https://sr-integrated-students-table.netlify.app/ 
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+### 1. Student List
+- Displays students in a table format.
+- Columns included:
+  - Name
+  - Email
+  - Age
+  - Actions (Edit/Delete)
+
+### 2. Add Student
+- Form to add a new student.
+- Validation rules:
+  - All fields are mandatory.
+  - Email must be in valid format.
+
+### 3. Edit Student
+- Existing student details can be edited.
+- Form fields are **pre-filled** with current data.
+- Same validation rules as Add Student.
+
+### 4. Delete Student
+- Students can be deleted from the table.
+- A **confirmation dialog** appears before deletion.
+
+### 5. Simulated Loading State
+- A loading indicator is shown while fetching or updating data to simulate a real application experience.
+
+### 6. Excel Download
+- Users can download:
+  - All students data
+  - Filtered student data
+- File is exported in **Excel format (.xlsx)**.
+
+---
+
+## Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6)
+- Bootstrap
+- XLSX (for Excel export)
+
+---
+
+## Author
+
+**Madhav Agrawal**  
+Full Stack Developer  
+React | Java | Spring Boot
